@@ -86,10 +86,23 @@
     
 }
 
-.forget_password{
+.login_button{
     color: white;
     font-family: 'Roboto Mono',monospace;
     font-weight: 150;
     font-size: small;
+    background-color: #338da1;
+    position:static;
+    width: 80px;
+    height: 25px;
+    margin-top: 5px;
+
+
+    border-color: #4fc3dc;
+    border-radius: 7px;
+    box-shadow: 0 0 0 1px #4fc3dc;
+    border-width: 1px;
     
+
+    font-weight: 500;
 }
