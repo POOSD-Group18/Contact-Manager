@@ -1,0 +1,14 @@
+.pagetitle{
+    margin-top: 0;
+    display: flex;
+    margin-left: 60%;
+    margin-top: 50px;
+
+}
+
+.pagetitle_text{
+    color: white;
+    font-family: 'Roboto Mono',monospace;
+    font-size: xx-large;
+
+}
