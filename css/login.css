@@ -1,0 +1,95 @@
+.login_menu{
+    background-color: #101b2c;
+    border-color: #ff2d75;
+    border-width: 1.5px;
+    border-style: solid;
+    box-shadow: 0 0 0 3px #ff2d7544;
+
+    text-align: center;
+
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 60%;
+    
+    border-radius: 18px;
+    
+    
+    height: 200px;
+    
+
+    color: white;
+    position: relative;
+    width: 450px;
+    
+    
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.719);
+}
+
+.intro_text{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;  
+    margin-bottom: 20px;  
+    margin-top: 20px;
+    
+
+}
+
+
+
+.info_text{
+    font-family: 'Roboto Mono',monospace;
+    font-weight: 500;
+    margin-left: 15px;
+    
+}
+
+.username_input{
+    border-color: black;
+    border-radius: 3px;
+    border-width: 1.35px;
+    background-color: #0b131f;
+    font-family: 'Roboto Mono',monospace;
+    color: white;
+}
+
+.username_input_box{
+    
+}
+
+.username_box{ 
+    flex: 1;
+
+}
+
+
+.password_input{
+    border-color: black;
+    border-radius: 3px;
+    border-width: 1.35px;
+    background-color: #0b131f;
+    font-family: 'Roboto Mono',monospace;
+    color: white;
+   
+    
+}
+
+.password_input_box{
+    
+}
+
+.password_box{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.forget_password{
+    color: white;
+    font-family: 'Roboto Mono',monospace;
+    font-weight: 150;
+    font-size: small;
+    
+}
