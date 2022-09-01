@@ -35,7 +35,7 @@ body{
 }
 
 .search_input{
-    width: 500px;
+    width: 550px;
     height: 40px;
     text-align: center;
     
@@ -65,7 +65,7 @@ body{
 
 .search_action_button{
     font-family: 'Roboto Mono',monospace;
-    width: 70px;
+    width: 80px;
     height: 35px;
     
     margin-top: 25px;
@@ -85,4 +85,21 @@ body{
 .search_action_button:hover{
     box-shadow: 0 0 0 1.6px #4fc3dc44;
     border-color: #4fc3dc;
+}
+
+.logout_menu{
+    text-align: center;
+    margin-top: 175px;
+}
+
+.logout_text{
+    color: white;
+    font-family: 'Roboto Mono',monospace;
+    font-size: medium;
+}   
+
+.logout_text:hover{
+    color: #4fc3dc;
+    text-shadow: 0 0 0 3px #4fc3dc44;
+    
 }
