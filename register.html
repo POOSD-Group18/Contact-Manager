@@ -3,15 +3,13 @@
 <head>
     <title>Register page</title>
     <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/bubbles.css">
 
     <link rel="shortcut icon" type="x-icon" href="tablogo.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/bubbles.css">
-
 
 </head>
 <body>
@@ -66,15 +64,21 @@
 
     <div class="register_box">
         <div class="register_box_text"> 
-            
-            <input class="register_input_firstname" type="text" placeholder="First name">
-            <input class="register_input_lastname" type="text" placeholder="Last name">
-            <input class="register_input_username" type="text" placeholder="Username">
-            <input class="register_input_password" type="text" placeholder="Password">
+            <div>
+                <input class="register_input_firstname" type="text" placeholder="First name">
+                <input class="register_input_lastname" type="text" placeholder="Last name">
+                <input class="register_input_username" type="text" placeholder="Username">
+                <input class="register_input_password" type="text" placeholder="Password">
+            </div>
 
-            <div class="signup_button"><button>Sign up!</button></div>
+            <button class="signup_button">Sign up!</button>
         </div>
     </div>
+
+    <div class="return_box">
+        <a href="main.html" class="return_text">Return to login</a>
+    </div>
+
 </div>
 </body>
 </html>
