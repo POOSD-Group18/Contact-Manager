@@ -1,0 +1,11 @@
+.results_welcome_box{
+    margin-top: 60px;
+    text-align: center;
+    position: relative;
+}
+
+.results_welcome_text{
+    color: white;
+    font-family: 'Roboto Mono',monospace;
+    font-size: xx-large;
+}
