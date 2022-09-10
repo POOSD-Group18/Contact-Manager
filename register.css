@@ -1,0 +1,135 @@
+body{
+    background: #0c192c;
+    
+}
+
+.introtext{
+    color: white;
+    font-family: 'Roboto Mono',monospace;
+    font-size: x-large;
+    
+}
+
+.introtext_box{
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+}
+
+
+.register_box{
+    
+    display: flex;
+    justify-content: center;
+    position: relative;  
+    
+}
+
+.register_box_text{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    
+    height: 325px;
+    width: 300px;
+    
+    background-color: #101b2c;
+    border-color: #ff2d75;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 18px;
+    box-shadow: 0 0 0 1.2px #ff2d75;
+
+    font-family: 'Roboto Mono', monospace;
+
+    padding-top: 10px;
+    position: absolute;
+}
+
+.register_box_text:hover{
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 3px #4fc3dc44;
+
+}
+
+.register_input_firstname,
+.register_input_lastname,
+.register_input_username,
+.register_input_password
+{
+    font-family: 'Roboto Mono',monospace;
+    
+    margin-top: 30px;
+    text-align: center;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 6px;
+    /*box-shadow: 0 0 0 1.2px #ff2d75;*/
+    background-color: #0b131f;
+    color: white;
+    
+}
+
+.register_input_firstname:hover,
+.register_input_lastname:hover,
+.register_input_username:hover,
+.register_input_password:hover{
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 1.2px #4fc3dc;
+    
+}
+
+.signup_button{
+    color: white;
+    font-family: 'Roboto Mono',monospace;
+    font-weight: 150;
+    font-size: small;
+    background-color: #0c192c;
+    position:static;
+    width: 80px;
+    height: 25px;
+    margin-top: 35px;
+
+    border-color: #ff2d75;
+    border-radius: 7px;
+    box-shadow: 0 0 0 1px #ff2d75;
+    border-width: 1px;
+
+    font-weight: 500;;
+    
+}
+
+.signup_button:hover{
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 3px #4fc3dc44;
+}
+
+.return_box{
+    
+    position: absolute;
+    
+    border-width: 1.5px;
+    
+    height: 80px;
+    width: 100%;
+    margin-top: 400px;
+    text-align: center;
+    display: block;
+    align-items: center;
+}
+
+.return_text{
+    color: white;
+    font-family: 'Roboto Mono',monospace;
+    font-size: large;
+}
+
+.return_text:hover{
+    color: #4fc3dc;
+    text-shadow: 0 0 0 3px #4fc3dc44;
+    
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.719);
+}
