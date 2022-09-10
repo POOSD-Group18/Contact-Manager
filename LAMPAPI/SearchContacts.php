@@ -2,7 +2,7 @@
 
 	$inData = getRequestInfo();
 	
-	$searchResults = "";
+	$searchResults = array();
 	$searchCount = 0;
 
 	$conn = new mysqli("localhost", "TheBeast", "WeLoveCOP4331", "COP4331G18");
@@ -12,22 +12,19 @@
 	} 
 	else
 	{
-		$stmt = $conn->prepare("select Name from Contacts where Name like ? and UserID=?");
-		$contactName = "%" . $inData["search"] . "%";
-		$stmt->bind_param("ss", $contactName, $inData["userId"]);
+		$stmt = $conn->prepare("select * from Contacts where Name like ? and UserID=?");
+		$name = "%" . $inData["name"] . "%";
+		$stmt->bind_param("sd", $name, $inData["userId"]);
 		$stmt->execute();
 		
 		$result = $stmt->get_result();
 		
 		while($row = $result->fetch_assoc())
 		{
-			if( $searchCount > 0 )
-			{
-				$searchResults .= ",";
-			}
+			$searchResults[$searchCount] = $row;
 			$searchCount++;
-			$searchResults .= '"' . $row["Name"] . '"';
 		}
+		
 		
 		if( $searchCount == 0 )
 		{
@@ -35,7 +32,7 @@
 		}
 		else
 		{
-			returnWithInfo( $searchResults );
+			returnWithInfo( json_encode($searchResults) );
 		}
 		
 		$stmt->close();
@@ -61,8 +58,7 @@
 	
 	function returnWithInfo( $searchResults )
 	{
-		$retValue = '{"results":[' . $searchResults . '],"error":""}';
-		sendResultInfoAsJson( $retValue );
+		sendResultInfoAsJson( $searchResults );
 	}
 	
 ?>
