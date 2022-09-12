@@ -18,6 +18,12 @@
         <link rel="stylesheet" href="css/signup.css">
         <link rel="stylesheet" href="css/general.css">
 
+
+
+        <script src="js/script.js"></script>
+        <script type="text/javascript" src="js/md5.js"></script>
+        <!--<script src="js/test.js"></script>-->
+
     </head>
     <body>
         <div class="container">
@@ -190,13 +196,14 @@
                 
                 <div class="user_login">
 
+
                     <div class="username_box">
 
                         <span class="info_text">Username:</span>
                         
                         <span class="username_input_box">
 
-                            <input class="username_input" type="text" placeholder="Username">
+                            <input class="username_input" type="text" placeholder="Username" id= "loginName">
                         </span>
                     </div>
 
@@ -206,12 +213,14 @@
                         
                         <span class="password_input_box">
                             
-                            <input class="password_input" type="password" placeholder="Password">
+                            <input class="password_input" type="password" placeholder="Password" id = "loginPassword">
                         </span>
                     </div>
                     
-                    <button class = "login_button" href="manager.html">Login!</button>
+                    
+                    <button class = "login_button" href="manager.html" id = "loginButton" onclick="doLogin()">Login!</button>
 
+                    <span id="loginResult"></span>
                 </div>
 
             </div>
