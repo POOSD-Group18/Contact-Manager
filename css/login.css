@@ -115,3 +115,9 @@
     border-color: #4fc3dc;
     box-shadow: 0 0 0 3px #4fc3dc44;
 }
+
+#loginResult{
+    color : #ff2d75;
+    font-family: 'Roboto Mono',monospace;
+    font-size: small;
+}
