@@ -1,0 +1,89 @@
+.add_welcome_box{
+    margin-top: 60px;
+    text-align: center;
+    position: relative;
+}
+
+.add_welcome_text{
+    color: white;
+    font-family: 'Roboto Mono',monospace;
+    font-size: x-large;
+}
+
+.contact_container{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 65px;
+    
+}
+
+.contact_box{
+    padding-top: 12px;
+
+    border-color: #ff2d75;
+    background-color: #101b2c;
+    box-shadow: 0 0 0 3px #ff2d7544;
+
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 13px;
+
+    height: 450px;
+    width: 350px;
+    position: relative;
+    
+    
+    
+}
+
+
+
+.addinfo{
+    font-family: 'Roboto Mono',monospace;
+    font-size: medium;
+    margin-top: 14px;
+    text-align: center;
+    color:white
+    
+}
+
+.contact_input{
+    text-align: center;
+    margin-top: 8px;
+    width: 55%;
+    border-radius: 4px;
+    border-color: black;
+    background-color: #0b131f;
+    color: white;
+    font-family: 'Roboto Mono',monospace;
+    outline:0;
+}
+
+#addContactButton{
+    margin-top: 20px;
+    position: relative;
+
+    width: 80px;
+    height: 35px;
+
+    border-radius: 20px;
+    font-family: 'Roboto Mono',monospace;
+
+    background-color: #0b131f;
+    border-color: #ff2d75;
+    box-shadow: 0 0 0 1.6px #ff2d7544;
+    color: white;
+
+}
+
+#addContactButton:hover{
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 3px #4fc3dc44;
+}
+
+.contact_box:hover{
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 3px #4fc3dc44;
+}
+

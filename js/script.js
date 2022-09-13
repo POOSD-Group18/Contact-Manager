@@ -52,7 +52,7 @@ async function doLogin()
     try
     {   
         password = md5(password)
-        const payload = {username:login,password:password}
+        const payload = {login:login,password:password}
 
         const res = await axios.post(urlBase + '/Login' + extension)
 
@@ -108,4 +108,62 @@ function getCookie(name) {
     }
     
     return null;
+}
+
+async function addContact(){
+
+    let firstname = document.getElementById("contactFirstName").value;
+    let lastname = document.getElementById("contactLastName").value;
+    let phone = document.getElementById("contactPhoneNumber").value;
+    let email = document.getElementById("contactEmail").value;
+
+    let valid = true;
+
+    const reqLength = value => value === '' ? false : true;
+
+    if(!reqLength(firstName)){
+        window.alert("First name cannot be blank");
+        valid = false;
+    }
+
+    if(!reqLength(lastName)){
+        window.alert("Last name cannot be blank");
+        valid = false;
+    }
+
+    if(!reqLength(phone)){
+        window.alert("Phone number cannot be blank");
+        valid = false;
+    }
+
+    if(!reqLength(email)){
+        window.alert("Email cannot be blank");
+    }
+
+    if(valid == false){
+        return false;
+    }
+
+    try{
+        const userId = getCookie("userId");
+        const payload = {firstName:firstname, lastName:lastname, email:email, phoneNumber:phone, userId: userId}
+        const res = await axios.post(urlBase + '/AddContact' + extension, payload)
+
+        if(res.data.error != ""){
+            throw new Error(res.data.error)
+        }
+
+        else{
+            window.location.href = "manager.html"
+        }
+    }
+
+    catch(e){
+        window.alert("Something went wrong!");
+        console.log("Something went wrong!");
+    }
+
+
+   
+    
 }
