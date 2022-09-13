@@ -12,14 +12,46 @@ async function doLogin()
     firstName = "";
     lastName = "";
 
+    const min = 3, max = 30;
+
     let login = document.getElementById("loginName").value;
     let password = document.getElementById("loginPassword").value;
 
     document.getElementById("loginResult").innerHTML = "";
 
+    const reqLength = value => value === '' ? false : true;
+    const reqLimits = (length,min,max) => length < min || length > max ? false : true;
+
+    let valid = true;
+
+    if(!reqLength(login)){
+        window.alert("Username cannot be blank.");
+
+        valid = false;
+    }
+
+    else if(!reqLimits(username.length,min,max)){
+        window.alert("Username must be between 3 and 30 characters,");
+
+        valid = false;
+    }
+    
+    else{
+        window.alert("You good")
+    }
+
+    if(!reqLength(password)){
+        window.alert("Password cannot be blank");
+    }
+
+    if(valid == false){
+        return false;
+    }
+
 
     try
-    {
+    {   
+        password = md5(password)
         const payload = {username:login,password:password}
 
         const res = await axios.post(urlBase + '/Login' + extension)
@@ -62,4 +94,18 @@ function saveCookie(cookieName, id)
     const expires = "expires=" + date.toUTCString();
     document.cookie =  cookieName + "=" + id + "; " + expires + "; path=/";
 
+}
+
+function getCookie(name) {
+    var cookieArr = document.cookie.split(";");
+    
+    for(var i = 0; i < cookieArr.length; i++) {
+        var cookiePair = cookieArr[i].split("=");
+   
+        if(name == cookiePair[0].trim()) {
+            return decodeURIComponent(cookiePair[1]);
+        }
+    }
+    
+    return null;
 }
