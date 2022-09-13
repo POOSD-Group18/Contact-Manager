@@ -1,0 +1,95 @@
+body{
+    background: #0c192c;  
+}
+
+.introtext{
+    color: white;
+    font-family: 'Roboto Mono',monospace;
+    font-size: x-large;
+}
+
+.introtext_box{
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+.center{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.search_button{
+    color: white;
+    font-family: 'Roboto Mono',monospace;
+    font-weight: 150;
+    font-size: small;
+    background-color: #0c192c;
+    position:static;
+    width: 80px;
+    height: 25px;
+    margin-top: 35px;
+
+    border-color: #ff2d75;
+    border-radius: 7px;
+    box-shadow: 0 0 0 1px #ff2d75;
+    border-width: 1px;
+
+    font-weight: 500;;
+    
+}
+
+.search_button:hover{
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 3px #4fc3dc44;
+}
+
+.logout_button{
+    color: white;
+    font-family: 'Roboto Mono',monospace;
+    font-weight: 150;
+    font-size: small;
+    background-color: #0c192c;
+    position:static;
+    width: 80px;
+    height: 25px;
+    margin-top: 35px;
+
+    border-color: #ff2d75;
+    border-radius: 7px;
+    box-shadow: 0 0 0 1px #ff2d75;
+    border-width: 1px;
+
+    font-weight: 500;;
+    
+}
+
+.logout_button:hover{
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 3px #4fc3dc44;
+}
+
+.create_button{
+    color: white;
+    font-family: 'Roboto Mono',monospace;
+    font-weight: 150;
+    font-size: small;
+    background-color: #0c192c;
+    position:static;
+    width: 80px;
+    height: 25px;
+    margin-top: 35px;
+
+    border-color: #ff2d75;
+    border-radius: 7px;
+    box-shadow: 0 0 0 1px #ff2d75;
+    border-width: 1px;
+
+    font-weight: 500;;
+    
+}
+
+.create_button:hover{
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 3px #4fc3dc44;
+}

@@ -10,7 +10,7 @@ async function doRegister()
     if(username.length < 1)
     {
         pass=false;
-        /*no alerts*/("Username cannot be empty");
+        /*alerts will be replaced, this is for testing*/alert("Username cannot be empty");
     }
     /*check for matching username*/
     /*else if(){
@@ -20,24 +20,24 @@ async function doRegister()
     }*/
 
     var password = document.getElementById("Password").value;
-    if(password.length < 1)
+    if(password.length < 3 || password.length > 25)
     {
         pass=false;
-        /*no alerts*/("Password cannot be empty");
+        /*alerts will be replaced, this is for testing*/alert("Please create a password between 3 - 25 characters");
     }
 
     var fname = document.getElementById("FirstName").value;
         if(fname.length<1)
         {
         pass=false;
-        /*no alerts*/("First name cannot be empty");
+        /*alerts will be replaced, this is for testing*/alert("First name cannot be empty");
         }
 
     var lname = document.getElementById("LastName").value;
         if(lname.length<1)
         {
         pass=false;
-        /*no alerts*/("Last name cannot be empty");
+        /*alerts will be replaced, this is for testing*/alert("Last name cannot be empty");
         }
 
     /*If an error was detected, returns false and register fails*/
