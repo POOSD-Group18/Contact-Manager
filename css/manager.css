@@ -3,7 +3,6 @@ body{
 }
 
 .search_welcome_box{
-    margin-top: 0;
     text-align: center;
     margin-top: 60px;
     position: relative;
@@ -95,7 +94,7 @@ body{
 .logout_text{
     color: white;
     font-family: 'Roboto Mono',monospace;
-    font-size: medium;
+    font-size: large;
 }   
 
 .logout_text:hover{
