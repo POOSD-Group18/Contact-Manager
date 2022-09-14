@@ -138,6 +138,7 @@ async function addContact(){
 
     if(!reqLength(email)){
         window.alert("Email cannot be blank");
+        valid = false;
     }
 
     if(valid == false){
@@ -166,4 +167,41 @@ async function addContact(){
 
    
     
+}
+
+async function searchContact(){
+
+    let search = document.getElementById("searchInput").value;
+
+    if(search.length < 1){
+        window.alert("You need to input at least one letter");
+    }
+
+    try{
+        const userId = getCookie("userId");
+        const payload = {name:search,userId:userId}
+        const res = await axios.post(urlBase + '/SearchContact' + extension);
+
+        if(res.data.error != ""){
+            throw new Error(res.data.error)
+        }
+
+        else if(res.data.results.length == 0){
+            window.alert("No contact found!")
+            
+            window.location.href = "manager.html"
+        }
+
+        else{
+            window.location.href = "results.html"
+        }
+        
+    }
+
+    catch(e){
+        window.alert("Something went wrong");
+        console.log("Something went wrong");
+    }
+
+
 }

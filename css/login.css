@@ -104,6 +104,8 @@
     color: white;
 
     font-size: medium;
+
+    cursor: pointer;
 }
 
 .login_menu:hover{

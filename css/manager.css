@@ -84,6 +84,7 @@ body{
 .search_action_button:hover{
     box-shadow: 0 0 0 1.6px #4fc3dc44;
     border-color: #4fc3dc;
+    cursor: pointer;
 }
 
 .logout_menu{
@@ -100,5 +101,6 @@ body{
 .logout_text:hover{
     color: #4fc3dc;
     text-shadow: 0 0 0 3px #4fc3dc44;
+    cursor: pointer;
     
 }
