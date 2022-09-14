@@ -17,3 +17,10 @@
     font-family: 'Roboto Mono',monospace;
     font-size: large;
 }
+
+
+.signup_text:hover{
+    color: #4fc3dc;
+    text-shadow: 0 0 0 3px #4fc3dc44;
+    
+}

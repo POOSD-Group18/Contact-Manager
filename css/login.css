@@ -15,14 +15,15 @@
     
     
     height: 200px;
-    
+    width: 450px;
 
     color: white;
     position: relative;
-    width: 450px;
+    
     
     
 }
+
 
 ::placeholder{
     color: rgba(255, 255, 255, 0.719);
@@ -41,7 +42,7 @@
 
 .info_text{
     font-family: 'Roboto Mono',monospace;
-    font-weight: 500;
+    font-weight: medium;
     margin-left: 15px;
     
 }
@@ -53,6 +54,7 @@
     background-color: #0b131f;
     font-family: 'Roboto Mono',monospace;
     color: white;
+    outline: 0;
 }
 
 .username_input_box{
@@ -72,7 +74,7 @@
     background-color: #0b131f;
     font-family: 'Roboto Mono',monospace;
     color: white;
-   
+    outline: 0;   
     
 }
 
@@ -87,22 +89,29 @@
 }
 
 .login_button{
-    color: white;
     font-family: 'Roboto Mono',monospace;
-    font-weight: 150;
-    font-size: small;
-    background-color: #338da1;
-    position:static;
     width: 80px;
-    height: 25px;
-    margin-top: 5px;
-
-
-    border-color: #4fc3dc;
-    border-radius: 7px;
-    box-shadow: 0 0 0 1px #4fc3dc;
-    border-width: 1px;
+    height: 35px;
     
+    margin-top: 0px;
 
-    font-weight: 500;
+    background-color: #0b131f;
+    border-color: #ff2d75;
+    border-radius: 20px;
+    border-width: 1px;
+    box-shadow: 0 0 0 1.6px #ff2d7544;
+
+    color: white;
+
+    font-size: medium;
+}
+
+.login_menu:hover{
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 3px #4fc3dc44;
+}
+
+.login_button:hover{
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 3px #4fc3dc44;
 }

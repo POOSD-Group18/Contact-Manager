@@ -1,14 +1,11 @@
-.pagetitle{
-    margin-top: 0;
-    display: flex;
-    margin-left: 60%;
-    margin-top: 50px;
+.results_welcome_box{
+    margin-top: 60px;
+    text-align: center;
     position: relative;
 }
 
-.pagetitle_text{
+.results_welcome_text{
     color: white;
     font-family: 'Roboto Mono',monospace;
     font-size: xx-large;
-
 }
