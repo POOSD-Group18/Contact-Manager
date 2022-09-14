@@ -70,10 +70,11 @@
         <div class="register_box_text"> 
             <form method = "post" action = "Register.php" onSubmit="return doRegister()">
                 <div>
-                    <input class="register_input_firstname" type="text" placeholder="First name">
-                    <input class="register_input_lastname" type="text" placeholder="Last name">
-                    <input class="register_input_username" type="text" placeholder="Username">
-                    <input class="register_input_password" type="text" placeholder="Password">
+                    <!--Add labels outside of the text box, especially for password limit-->
+                    <input class="register_input_firstname" type="text" id="FirstName" placeholder="First name">
+                    <input class="register_input_lastname" type="text" id="LastName" placeholder="Last name">
+                    <input class="register_input_username" type="text" id="Login" placeholder="Username">
+                    <input class="register_input_password" type="text" id="Password" placeholder="Password">
                 </div>
             </form>
             <button class="signup_button" onclick="doRegister()">Sign up!</button>
