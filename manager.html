@@ -3,7 +3,7 @@
     <head>
             <title>Manager page</title>
 
-            <link rel="shortcut icon" type="x-icon" href="tablogo.png">
+            <link rel="shortcut icon" type="x-icon" href="tab.png">
             <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,9 @@
 
             <link rel="stylesheet" href="css/manager.css">
             <link rel="stylesheet" href="css/bubbles.css">
+
+            <script type="text/javascript" src="js/md5.js"></script>
+            <script type="text/javascript" src="js/script.js"></script>
     </head>
 
     <body>
@@ -182,7 +185,7 @@
             </div>
 
             <div class="search_input_box">
-                <input class="search_input" type="text" placeholder="Search">
+                <input class="search_input" type="text" placeholder="Search" id="searchInput">
 
                 <div class="search_action_box">
                     <button class="search_action_button">Find!</button>
@@ -190,7 +193,7 @@
             </div>
 
             <div class="logout_menu">
-                <a href="main.html" class="logout_text">Log Out!</a>
+                <a class="logout_text" onclick= doLogout()>Log Out!</a>
             </div>
 
     
