@@ -1,16 +1,43 @@
 const urlBase = 'http://cop-4331-group-18.live/LAMPAPI';
-const extension = 'php';
-<script src="js/md5.js"></script>
+const extension = '.php'
+/*<script src="js/md5.js"></script>*/
 
 async function doRegister()
 {
-    var pass = true; /*pass checks for any failure during the registration*/
+    let success = true; /*success checks for any failure during the registration*/
+
+    var fname = document.getElementById("FirstName").value;
+    var lname = document.getElementById("LastName").value;
     var username = document.getElementById("Login").value;
-    /*check for empty field*/
+    var password = document.getElementById("Password").value;
+        if(fname.length<1)
+        {
+        success=false;
+        document.getElementById("fnameResult").innerHTML = 'First name cannot be empty'
+        }
+        else{
+            document.getElementById("fnameResult").innerHTML = ''
+        }
+
+    
+       if(lname.length<1)
+        {
+        success=false;
+        document.getElementById("lnameResult").innerHTML = 'Last name cannot be empty'
+        }
+        else{
+            document.getElementById("lnameResult").innerHTML = ''
+        }
+
+   
+    /*check for empty field, returns error and register fails if an empty field is found*/
     if(username.length < 1)
     {
-        pass=false;
-        /*alerts will be replaced, this is for testing*/alert("Username cannot be empty");
+        success=false;
+        document.getElementById("loginResult").innerHTML = 'Username cannot be empty'
+    }
+    else{
+        document.getElementById("loginResult").innerHTML = ''
     }
     /*check for matching username*/
     /*else if(){
@@ -19,29 +46,18 @@ async function doRegister()
         document.getElementById("").innerHTML="*";
     }*/
 
-    var password = document.getElementById("Password").value;
+   
     if(password.length < 3 || password.length > 25)
     {
-        pass=false;
-        /*alerts will be replaced, this is for testing*/alert("Please create a password between 3 - 25 characters");
+        success=false;
+        document.getElementById("passResult").innerHTML = 'Please create a password between 3 - 25 characters'
+    }
+    else{
+        document.getElementById("passResult").innerHTML = ''
     }
 
-    var fname = document.getElementById("FirstName").value;
-        if(fname.length<1)
-        {
-        pass=false;
-        /*alerts will be replaced, this is for testing*/alert("First name cannot be empty");
-        }
-
-    var lname = document.getElementById("LastName").value;
-        if(lname.length<1)
-        {
-        pass=false;
-        /*alerts will be replaced, this is for testing*/alert("Last name cannot be empty");
-        }
-
     /*If an error was detected, returns false and register fails*/
-    if(pass==false)
+    if(success==false)
     {
         return false;
     }
@@ -49,20 +65,32 @@ async function doRegister()
     /*Hashes password*/
     try{
         password = md5(password)
-        const payload = {fname:fname, lname:lname, login:username, password:password}
-        const res = await axios.post(urlBase + '/register' + extension, payload)
-
+        const payload = {firstName:fname, lastName:lname, login:username, passwordHash:password}
+        const res = await axios.post(urlBase + '/Register' + extension, payload);
         if (res.data.error != ""){
+            window.alert("Error");
             throw new Error(res.data.error)
         }
 
         else{
-            const userID = res.data.id
-            window.location.href = "http://cop-4331-group-18.live/index.html"; 
+            const userId = res.data.id
+            saveCookie("userId", userId)
+            window.location.href = "http://cop-4331-group-18.live/manager.html"; 
         }
     }
 
     catch(e){
         console.log("An error has occurred", e)
+        console.log(e);
     }
+}
+
+function saveCookie(cookieName, id)
+{
+    let minutes = 10;
+	let date = new Date();
+	date.setTime(date.getTime()+(minutes*60*1000));	
+    const expires = "expires=" + date.toUTCString();
+    document.cookie =  cookieName + "=" + id + "; " + expires + "; path=/";
+
 }

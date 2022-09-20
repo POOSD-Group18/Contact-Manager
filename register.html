@@ -4,8 +4,9 @@
     <title>Register page</title>
     <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/bubbles.css">
-    <script src="../js/register.js"></script>
-    <script src="../js/md5.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/md5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="shortcut icon" type="x-icon" href="tab.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
@@ -70,10 +71,23 @@
         <div class="register_box_text"> 
             <form method = "post" action = "Register.php" onSubmit="return doRegister()">
                 <div>
-                    <input class="register_input_firstname" type="text" placeholder="First name">
-                    <input class="register_input_lastname" type="text" placeholder="Last name">
-                    <input class="register_input_username" type="text" placeholder="Username">
-                    <input class="register_input_password" type="text" placeholder="Password">
+                    <!--Add labels outside of the text box, especially for password limit-->
+                    <input class="register_input_firstname" type="text" id="FirstName" placeholder="First name">
+                    <div class="warning_text_box">
+                        <div class = "warning_text" id="fnameResult"></div>
+                    </div>
+                    <input class="register_input_lastname" type="text" id="LastName" placeholder="Last name">
+                    <div class="warning_text_box">
+                        <div class = "warning_text" id="lnameResult"></div>
+                    </div>
+                    <input class="register_input_username" type="text" id="Login" placeholder="Username">
+                    <div class="warning_text_box">
+                        <div class = "warning_text" id="loginResult"></div>
+                    </div>
+                    <input class="register_input_password" type="text" id="Password" placeholder="Password">
+                    <div class="warning_text_box">
+                        <div class = "warning_text" id="passResult"></div>
+                    </div>
                 </div>
             </form>
             <button class="signup_button" onclick="doRegister()">Sign up!</button>
