@@ -446,6 +446,7 @@ async function doRegister()
         document.getElementById("passResult").innerHTML = 'Please create a password between 3 - 25 characters'
     }
     else if(password !== confirmp){
+        success=false;
         document.getElementById("passResult").innerHTML = 'Password do not match'
     }
     else{
@@ -471,7 +472,7 @@ async function doRegister()
         else{
             const userId = res.data.id
             saveCookie("userId", userId)
-            window.location.href = "http://cop-4331-group-18.live/manager.html";
+            window.location.href = "http://cop-4331-group-18.live/";
         }
     }
 
