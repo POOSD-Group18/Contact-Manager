@@ -1,0 +1,26 @@
+.signup_menu{
+    
+    position: absolute;
+    
+    border-width: 1.5px;
+    
+    height: 80px;
+    width: 100%;
+    margin-top: 18%;
+    text-align: center;
+    
+    
+}
+
+.signup_text{
+    color: white;
+    font-family: 'Roboto Mono',monospace;
+    font-size: large;
+}
+
+
+.signup_text:hover{
+    color: #4fc3dc;
+    text-shadow: 0 0 0 3px #4fc3dc44;
+    
+}

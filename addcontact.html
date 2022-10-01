@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add a new contact</title>
+
+        <link rel="shortcut icon" type="x-icon" href="tab.png">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <link rel="stylesheet" href="css/bubbles.css">
+        <link rel="stylesheet" href="css/addcontact.css">
+        <link rel="stylesheet" href="css/manager.css">
+
+        <script type="text/javascript" src="js/md5.js"></script>
+	    <script type="text/javascript" src="js/script.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class= "bubbles">
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:25;"></span>
+                
+            </div>
+
+            <div style="margin-left: auto;">
+                <button class="logout_button" onclick= "doLogout()">Log Out</button>
+                <button class="return_button" onclick="window.location.href='http://cop-4331-group-18.live/manager.html';">Return to Manager</button>
+            </div>
+
+            <div class="add_welcome_box">
+                <p class="add_welcome_text">Enter new contact information</p>
+            </div>
+
+            <div class="contact_container">
+                <div class = "contact_box">
+                    <div class="addinfo">
+                        <span class="contactDetail">First name</span>
+                        <div class="contactInput">
+                            <input class="contact_input" type="text" placeholder="..." id="contactFirstName">
+                        </div>
+                        <div class="warning_text_box">
+                            <div class = "warning_text" id="addfnameResult"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="addinfo">
+                        <span class="contactDetail">Last name</span>
+                        <div class="contactInput">
+                            <input class="contact_input" type="text" placeholder="..." id="contactLastName">
+                        </div>
+                        <div class="warning_text_box">
+                            <div class = "warning_text" id="addlnameResult"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="addinfo">
+                        <span class="contactDetail">Phone number</span>
+                        <div class="contactInput">
+                            <input class="contact_input" type="text" placeholder="..." id="contactPhoneNumber">
+                        </div>
+                        <div class="warning_text_box">
+                            <div class = "warning_text" id="addphoneResult"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="addinfo">
+                        <span class="contactDetail">E-mail</span>
+                        <div class="contactInput">
+                            <input class="contact_input" type="text" placeholder="..." id="contactEmail">
+                        </div>
+                        <div class="warning_text_box">
+                            <div class = "warning_text" id="addemailResult"></div>
+                        </div>
+                    </div>
+
+                    <div class="addinfo">
+                        <button id="addContactButton" onclick = addContact()>Save</button>
+                    </div>
+
+                    <div class = "resultboxPopup">
+                        <div id="addResult" class="resultPopup">
+                            <div class = "resultContainer">
+                                <div class = "resultText">Contact created successfully!</div>
+                                <button class="resultButton" onclick = clearAdd()>Create another contact</button>
+                                <button class="resultButton" onclick="window.location.href='http://cop-4331-group-18.live/manager.html'">Return to manager</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </body>
+</html>

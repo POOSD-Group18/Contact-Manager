@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register page</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/bubbles.css">
+    <script src="js/script.js"></script>
+    <script src="js/md5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="shortcut icon" type="x-icon" href="tab.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class= "bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:25;"></span>
+            
+            
+
+
+        </div>
+
+    <div class="introtext_box">
+    <p class="introtext">Create Account</p>
+    </div>
+
+    <div class="register_box">
+        <div class="register_box_text"> 
+            <form method = "post" action = "Register.php" onSubmit="return doRegister()">
+                <div>
+                    <!--Add labels outside of the text box, especially for password limit-->
+                    <p class="register_textbox">Enter your first and last name:</p>
+                    <input class="register_input_firstname" type="text" id="FirstName" placeholder="First name">
+                    <input class="register_input_lastname" type="text" id="LastName" placeholder="Last name">
+                    <div class="warning_text_box">
+                        <div class = "warning_text" id="nameResult"></div>
+                    </div>
+                    <p class="register_textbox">Create a Username:</p>
+                    <input class="register_input_username" type="text" id="Login" placeholder="Username">
+                    <div class="warning_text_box">
+                        <div class = "warning_text" id="loginResult"></div>
+                    </div>
+                    <p class="register_textbox">Create a password (3-25 characters):</p>
+                    <input class="register_input_password" type="password" id="Password" placeholder="Password">
+                    <input class="register_input_password" type="password" id="ConfirmPassword" placeholder="Confirm password">
+                    <div class="warning_text_box">
+                        <div class = "warning_text" id="passResult"></div>
+                    </div>
+                </div>
+            </form>
+            <button class="signup_button" onclick="doRegister()">Sign up!</button>
+        </div>
+    </div>
+
+    <div class="return_box">
+        <a href="index.html" class="return_text">Return to login</a>
+    </div>
+
+</div>
+</body>
+</html>
