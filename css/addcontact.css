@@ -29,20 +29,15 @@
     border-width: 1.5px;
     border-radius: 13px;
 
-    height: 450px;
+    height: 400px;
     width: 350px;
-    position: relative;
-    
-    
-    
+    position: relative;   
 }
-
-
 
 .addinfo{
     font-family: 'Roboto Mono',monospace;
     font-size: medium;
-    margin-top: 14px;
+    margin-top: 20px;
     text-align: center;
     color:white
     
@@ -52,12 +47,24 @@
     text-align: center;
     margin-top: 8px;
     width: 55%;
-    border-radius: 4px;
-    border-color: black;
     background-color: #0b131f;
+    border-color: #ff2d75;
+    border-width: 1px;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1.6px #ff2d7544;
     color: white;
     font-family: 'Roboto Mono',monospace;
     outline:0;
+}
+
+.contact_input:hover{
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 1.6px #4fc3dc44;
+}
+
+.contact_input:focus{
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 1.6px #4fc3dc44;
 }
 
 #addContactButton{
@@ -87,3 +94,106 @@
     box-shadow: 0 0 0 3px #4fc3dc44;
 }
 
+.return_button{
+    position: absolute;
+    font-family: 'Roboto Mono',monospace;
+    width: 100px;
+    height: 56px;
+    
+    margin-top: 85px;
+    margin-left: 40px;
+
+    background-color: #0b131f;
+    border-color: #ff2d75;
+    border-radius: 20px;
+    border-width: 1px;
+    box-shadow: 0 0 0 1.6px #ff2d7544;
+
+    color: white;
+
+    font-size: medium;
+    z-index: 1;
+}   
+
+.return_button:hover{
+    box-shadow: 0 0 0 1.6px #4fc3dc44;
+    border-color: #4fc3dc;
+    cursor: pointer;
+}
+
+.warning_text_box{
+    position:absolute;
+    margin: auto;
+    left: 0; right: 0;
+}
+
+.warning_text_box .warning_text{
+    margin-top: 5px;
+    color: red;
+    font-family: 'Roboto Mono',monospace;
+    font-size:x-small
+}
+
+.resultboxPopup {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.resultPopup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #4fc3dc;
+    z-index: 9;
+    border-radius: 5px;
+  }
+
+.resultContainer {
+    width: 500px;
+    padding: 20px;
+    background-color: #0b131f;
+    border-radius: 5px;
+}
+
+.resultText{
+    color: white;
+    font-family: 'Roboto Mono',monospace;
+    margin-bottom: 15px;
+}
+
+.resultButton{
+    display: inline-flex;
+    font-family: 'Roboto Mono',monospace;
+    width: 200px;
+    height: 60px;
+
+    background-color: #0b131f;
+    border-color: #ff2d75;
+    border-radius: 20px;
+    border-width: 1px;
+    box-shadow: 0 0 0 1.6px #ff2d7544;
+
+    color: white;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+
+    font-size: medium;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}   
+
+.resultButton:hover{
+    box-shadow: 0 0 0 1.6px #4fc3dc44;
+    border-color: #4fc3dc;
+    cursor: pointer;
+}

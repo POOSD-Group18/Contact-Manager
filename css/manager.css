@@ -4,9 +4,9 @@ body{
 
 .search_welcome_box{
     text-align: center;
-    margin-top: 60px;
+    margin-top: 25px;
     position: relative;
-    
+   
 }
 
 .search_welcome_text{
@@ -29,11 +29,12 @@ body{
 
 .search_input_box{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 25px;
     position: relative;
 }
 
 .search_input{
+    display: inline;
     width: 550px;
     height: 40px;
     text-align: center;
@@ -52,22 +53,24 @@ body{
     
 }
 
+.search_input:hover{
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 1.6px #4fc3dc44;
+}
+
 .search_input:focus{
     border-color: #4fc3dc;
     box-shadow: 0 0 0 1.6px #4fc3dc44;
 }
 
-.search_action_box{
-    
-    
-}
-
 .search_action_button{
+    display: inline;
     font-family: 'Roboto Mono',monospace;
     width: 80px;
     height: 35px;
     
-    margin-top: 25px;
+    margin-top: 15px;
+    margin-left: 15px;
 
     background-color: #0b131f;
     border-color: #ff2d75;
@@ -88,19 +91,162 @@ body{
 }
 
 .logout_menu{
+    position: absolute;
     text-align: center;
-    margin-top: 175px;
+    margin-left: 25px;
+    margin-top: 20px;
 }
 
-.logout_text{
+.logout_button{
+    position: absolute;
+    display: inline;
+    font-family: 'Roboto Mono',monospace;
+    width: 100px;
+    height: 35px;
+    
+    margin-top: 35px;
+    margin-left: 40px;
+
+    background-color: #0b131f;
+    border-color: #ff2d75;
+    border-radius: 20px;
+    border-width: 1px;
+    box-shadow: 0 0 0 1.6px #ff2d7544;
+
+    color: white;
+
+    font-size: medium;
+    z-index: 1;
+}   
+
+.logout_button:hover{
+    box-shadow: 0 0 0 1.6px #4fc3dc44;
+    border-color: #4fc3dc;
+    cursor: pointer;
+}
+
+p{
     color: white;
     font-family: 'Roboto Mono',monospace;
     font-size: large;
-}   
+}
 
-.logout_text:hover{
-    color: #4fc3dc;
-    text-shadow: 0 0 0 3px #4fc3dc44;
-    cursor: pointer;
+.add_option_button{
+    position: absolute;
+    right: 0;
+    display: inline;
+    font-family: 'Roboto Mono',monospace;
     
+    margin-top: 35px;
+    margin-right: 40px;
+
+    background-image: url(http://cop-4331-group-18.live/addcontact1.png);
+    background-size: cover;
+    background-color: #0b131f;
+    background-origin: padding-box;
+    border-color: #ff2d75;
+    border-radius: 20px;
+    border-width: 1px;
+    box-shadow: 0 0 0 1.6px #ff2d7544;
+
+    color: white;
+
+    font-size: medium;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    align-items: center;
+}
+
+.add_option_button:hover{
+    background-image: url(http://cop-4331-group-18.live/addcontact2.png);
+    box-shadow: 0 0 0 1.6px #4fc3dc44;
+    border-color: #4fc3dc;
+    cursor: pointer;
+}
+
+#no_contact_found{
+    color: #ff2d75;
+    font-family: 'Roboto Mono',monospace;
+    font-size: medium;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.user_login_name{
+    color: white;
+    font-family: 'Roboto Mono',monospace;
+    font-size: medium;
+}
+
+.results{
+    position: relative;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 10px;
+}
+
+#confirmation{
+    background-color:#ff2d75;
+    border-radius: 5px;
+    color: white;
+}
+
+#confirmation1{
+    background-color:#ff2d75;
+    border-radius: 5px;
+    color: white;
+}
+
+.editbtn_png{
+    background-image: url(http://cop-4331-group-18.live/edit_icon.png);
+    background-size: cover;
+    background-color: #0b131f;
+    width: 30px;
+    height: 30px;
+
+    border-width: 1px;
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 1.5px #4fc3dc44;
+    border-radius: 10%;
+    
+}
+
+.first_row{
+    color: #5ecee8fb;
+    text-shadow: #4fc3dc44;
+}
+
+.load_next_button{
+    background-image: url(http://cop-4331-group-18.live/rightbutton1.png);
+    background-size: cover;
+    background-color: #0b131f;
+    width: 20px;
+    height: 20px;
+    border-width: 1px;
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 1.5px #4fc3dc44;
+    border-radius: 10%;
+}
+
+.load_next_button:hover{
+    background-image: url(http://cop-4331-group-18.live/rightbutton2.png);
+}
+
+.load_previous_button{
+    background-image: url(http://cop-4331-group-18.live/leftbutton1.png);
+    background-size: cover;
+    background-color: #0b131f;
+    width: 20px;
+    height: 20px;
+    border-width: 1px;
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 1.5px #4fc3dc44;
+    border-radius: 10%;
+}
+
+.load_previous_button:hover{
+    background-image: url(http://cop-4331-group-18.live/leftbutton2.png);
 }

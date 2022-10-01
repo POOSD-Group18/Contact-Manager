@@ -4,7 +4,7 @@
     <title>Register page</title>
     <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/bubbles.css">
-    <script src="js/register.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/md5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -72,19 +72,20 @@
             <form method = "post" action = "Register.php" onSubmit="return doRegister()">
                 <div>
                     <!--Add labels outside of the text box, especially for password limit-->
+                    <p class="register_textbox">Enter your first and last name:</p>
                     <input class="register_input_firstname" type="text" id="FirstName" placeholder="First name">
-                    <div class="warning_text_box">
-                        <div class = "warning_text" id="fnameResult"></div>
-                    </div>
                     <input class="register_input_lastname" type="text" id="LastName" placeholder="Last name">
                     <div class="warning_text_box">
-                        <div class = "warning_text" id="lnameResult"></div>
+                        <div class = "warning_text" id="nameResult"></div>
                     </div>
+                    <p class="register_textbox">Create a Username:</p>
                     <input class="register_input_username" type="text" id="Login" placeholder="Username">
                     <div class="warning_text_box">
                         <div class = "warning_text" id="loginResult"></div>
                     </div>
-                    <input class="register_input_password" type="text" id="Password" placeholder="Password">
+                    <p class="register_textbox">Create a password (3-25 characters):</p>
+                    <input class="register_input_password" type="password" id="Password" placeholder="Password">
+                    <input class="register_input_password" type="password" id="ConfirmPassword" placeholder="Confirm password">
                     <div class="warning_text_box">
                         <div class = "warning_text" id="passResult"></div>
                     </div>
@@ -95,7 +96,7 @@
     </div>
 
     <div class="return_box">
-        <a href="main.html" class="return_text">Return to login</a>
+        <a href="index.html" class="return_text">Return to login</a>
     </div>
 
 </div>

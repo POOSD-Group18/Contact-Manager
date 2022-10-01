@@ -4,24 +4,22 @@
     border-width: 1.5px;
     border-style: solid;
     box-shadow: 0 0 0 3px #ff2d7544;
+    display: block;
 
     text-align: center;
 
     margin-top: 5%;
-    margin-left: 15%;
-    margin-right: 60%;
+    margin-left: auto;
+    margin-right: auto;
     
     border-radius: 18px;
     
     
-    height: 200px;
+    height: 220px;
     width: 450px;
 
     color: white;
     position: relative;
-    
-    
-    
 }
 
 
@@ -47,39 +45,34 @@
     
 }
 
-.username_input{
-    border-color: black;
-    border-radius: 3px;
-    border-width: 1.35px;
+.user_input{
     background-color: #0b131f;
+    border-color: #ff2d75;
+    border-width: 1px;
+    border-radius: 4px;
+    border-spacing: 5px;
+    height: 25px;
+    width: auto;
+    box-shadow: 0 0 0 1.6px #ff2d7544;
     font-family: 'Roboto Mono',monospace;
     color: white;
     outline: 0;
+    padding: 5px;
 }
 
-.username_input_box{
-    
+.user_input:focus{
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 1.6px #4fc3dc44;
+}
+
+.user_input:hover{
+    border-color: #4fc3dc;
+    box-shadow: 0 0 0 1.6px #4fc3dc44;
 }
 
 .username_box{ 
     flex: 1;
 
-}
-
-
-.password_input{
-    border-color: black;
-    border-radius: 3px;
-    border-width: 1.35px;
-    background-color: #0b131f;
-    font-family: 'Roboto Mono',monospace;
-    color: white;
-    outline: 0;   
-    
-}
-
-.password_input_box{
-    
 }
 
 .password_box{

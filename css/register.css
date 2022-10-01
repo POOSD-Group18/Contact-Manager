@@ -30,8 +30,8 @@ body{
     text-align: center;
     color: white;
     
-    height: 350px;
-    width: 300px;
+    height: 400px;
+    width: 35%;
     
     background-color: #101b2c;
     border-color: #ff2d75;
@@ -42,8 +42,14 @@ body{
 
     font-family: 'Roboto Mono', monospace;
 
-    padding-top: 10px;
+    padding-top: 20px;
     position: absolute;
+}
+
+.register_textbox{
+    color: white;
+    font-family: 'Roboto Mono',monospace;
+    margin-top: 20px;
 }
 
 .register_box_text:hover{
@@ -59,15 +65,15 @@ body{
 {
     font-family: 'Roboto Mono',monospace;
     
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
     border-width: 2px;
-    border-color: black;
+    border-color: #ff2d75;
     border-radius: 6px;
-    /*box-shadow: 0 0 0 1.2px #ff2d75;*/
+    box-shadow: 0 0 0 1.2px #ff2d75;
     background-color: #0b131f;
     color: white;
-    
+    margin-bottom: 10px;
 }
 
 .register_input_firstname:hover,
@@ -88,7 +94,7 @@ body{
     position:static;
     width: 80px;
     height: 25px;
-    margin-top: 60px;
+    margin-top: 40px;
 
     border-color: #ff2d75;
     border-radius: 7px;
@@ -112,7 +118,7 @@ body{
     
     height: 80px;
     width: 100%;
-    margin-top: 410px;
+    margin-top: 450px;
     text-align: center;
     display: block;
     align-items: center;
@@ -137,7 +143,6 @@ body{
 }
 
 .warning_text{
-    margin-top: 5px;
     color: red;
     font-family: 'Roboto Mono',monospace;
     font-size:x-small
